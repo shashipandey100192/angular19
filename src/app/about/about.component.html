@@ -1,4 +1,64 @@
 <p class="about">about works!</p>
 <h1 class="text-info bg-danger">this is bootstrap</h1>
 
-<button>Disabled button allowing interactivity</button>
+<section>
+    <div class="example-label">Basic</div>
+    <div class="example-button-row">
+      <button mat-button>Basic</button>
+      <button mat-button>Disabled</button>
+      <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="example-label">FAB</div>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-fab aria-label="Example icon button with a delete icon">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab disabled aria-label="Example icon button with a heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+<h1>card </h1>
+<mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title> Australian Shepherd</mat-card-title>
+      <mat-card-subtitle>Herding group</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button>Learn More</button>
+    </mat-card-actions>
+  </mat-card>
+  <br>
+  <mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Poodle</mat-card-title>
+      <mat-card-subtitle>Non-sporting group</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <button mat-button>Learn More</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab label="First">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1>this is bootstrap</h1>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+  </mat-tab-group>
+  
